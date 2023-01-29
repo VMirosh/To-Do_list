@@ -50,7 +50,7 @@ function createTask(text) {
 }
 
 function deleteTask(event) {
-  debugger
+
   if (event.target.dataset.action !== 'delete') return;
 
   let parenNode = event.target.closest('.task');

@@ -18,7 +18,7 @@ body{
   display: flex;
   justify-content: space-between;
   padding: 0 15px;
-  background-color: #ffffff80;
+  background-color: #ffffff00;
   align-items: center;
   margin: auto;
   font-size: 56px;
@@ -56,71 +56,82 @@ body{
   box-sizing: border-box;
   
 }
-.container main .create-task{  
+.container main .create-task{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  background-color: #f3bfb2b5;
+  background-color: #f3bfb200;
   font-size: 42px;
   width: 100%;
+  box-sizing: border-box;
   padding: 10px 0px;
 }
 .container main .create-task .form{
-  margin: 10px;
+  width: 100%;
+  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 .container main .create-task #task-input{
-  width: 40%;
-  font-size: 24px;
-  margin: 0 5px;
+  width: 69%;
+  font-family: cursive;
+  border-radius: 25px 0px 0 25px;
+  font-size: 22px;
+  padding: 10px 20px;
+  border: none;
+  /* margin: 0px 5px; */
 } 
 .container main .create-task #add-task-btn{
-  font-size: 24px;
-  color: #5b5652;
+  width: 25%;
+  background-color: #006704;
+  border-radius: 0px 25px 25px 0px;
+  font-size: 22px;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  font-family: cursive;
 }
+
+
 .container main .show-tasks{
   height: 500px;
   color: #006704;
-  overflow-y: scroll;
+  overflow-y: auto;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   font-size: 42px;
   width: 100%;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   margin: 15px 0;
-  border: 10px solid #ffffff80;
-
+  /* border: 10px solid #ffffff80; */
 }
 .container main .show-tasks .task{
-  font-size: 24px;
+  font-size: 22px;
   display: flex;
   background-color: #ffffff80;
   margin: 5px;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  
+  padding: 10px 20px;
+  border-radius: 25px;
 }
 .container main .show-tasks .task .input-check{
   display: flex;
+}
+.container main .show-tasks .task .input-check #task-value{
+  word-break: break-all;
 
 }
 .container main .show-tasks .task .input-check .done-task{
   text-decoration: line-through;
   color: #f3bfb2b5;
 }
-.container main .show-tasks .task .input-check input{
-  width: 15px;
 
-}
-.container main .show-tasks .task .input-check p{
-  margin: 0;
-}
+
 .container main .show-tasks .task  .buttons{
   width: 15%;
   display: flex;
@@ -128,10 +139,12 @@ body{
   align-items: center;
 }
 .container main .show-tasks .task  .buttons img{
-  width: 15px;
-  height: 15px;
+  width: 22px;
+  height: 22px;
   pointer-events: none;
 }
-
+.container main .show-tasks .task  .buttons button{
+  border: none;
+}
 
 
