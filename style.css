@@ -80,7 +80,7 @@ body{
   font-size: 24px;
   color: #006704;
 }
-.container main .shower-task{
+.container main .show-tasks{
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -92,7 +92,7 @@ body{
   border: 10px solid #ffffff80;
 
 }
-.container main .shower-task .task{
+.container main .show-tasks .task{
   display: flex;
   background-color: #ffffff80;
   margin: 5px;
@@ -101,42 +101,32 @@ body{
   padding: 10px;
   
 }
-.container main .shower-task .task .input-check{
+.container main .show-tasks .task .input-check{
   display: flex;
 
 }
-.container main .shower-task .task .input-check input{
+.container main .show-tasks .task .input-check .done-task{
+  text-decoration: line-through;
+  color: #f3bfb2b5;
+}
+.container main .show-tasks .task .input-check input{
   width: 15px;
 
 }
-.container main .shower-task .task .input-check p{
+.container main .show-tasks .task .input-check p{
   margin: 0;
 }
-.container main .shower-task .task  .buttons{
+.container main .show-tasks .task  .buttons{
   width: 15%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.container main .shower-task .task #yes{
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  /* border: none; */
-  /* background-image: url(./img/yes.png); */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+.container main .show-tasks .task  .buttons img{
+  width: 15px;
+  height: 15px;
+  pointer-events: none;
 }
-.container main .shower-task .task #close{
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  /* border: none; */
-  /* background-image: url(./img/close.png); */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 40px;
-}
+
 
 
