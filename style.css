@@ -71,7 +71,7 @@ body{
   flex-wrap: wrap;
   justify-content: center;
 }
-.container main .create-task #task-name-input{
+.container main .create-task #task-input{
   width: 40%;
   font-size: 24px;
   margin: 0 5px;
@@ -121,22 +121,22 @@ body{
 .container main .shower-task .task #yes{
   height: 30px;
   width: 30px;
-  background-image: url(./img/yes.png);
+  border-radius: 50%;
+  /* border: none; */
+  /* background-image: url(./img/yes.png); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border: none;
-  border-radius: 50%;
 }
 .container main .shower-task .task #close{
   height: 30px;
   width: 30px;
-  border: none;
-  background-image: url(./img/close.png);
+  border-radius: 50%;
+  /* border: none; */
+  /* background-image: url(./img/close.png); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40px;
-  border-radius: 50%;
 }
 
 
