@@ -1,14 +1,15 @@
 body{
   margin: 0;
+  font-family:cursive;
 }
 .container{
-  max-width: 100%;
+  max-width: 1000px;
   background-image: url(./img/container.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-
   padding: 5%;
+  margin: auto;
 
 }
 .container header{
@@ -20,14 +21,13 @@ body{
   background-color: #ffffff80;
   align-items: center;
   margin: auto;
-  font-size: 5vw;
+  font-size: 56px;
   text-align: center;
   color: #006704;
 }
 .container header .logo{
   display: flex;
-  max-width: 60%;
-  box-sizing: border-box;
+   box-sizing: border-box;
   align-items: center;
   justify-content: flex-start;
 }
@@ -36,7 +36,7 @@ body{
 }
 .container header .today-date{
   box-sizing: border-box;
-  font-size: 2vw;
+  font-size: 24px;
   max-width: 40%;
   text-align: right;
  
@@ -81,11 +81,13 @@ body{
   color: #006704;
 }
 .container main .show-tasks{
+  height: 500px;
+  overflow-y: scroll;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  font-size: 24px;
+  font-size: 42px;
   width: 100%;
   padding: 10px 20px;
   margin: 15px 0;
@@ -93,6 +95,7 @@ body{
 
 }
 .container main .show-tasks .task{
+  font-size: 24px;
   display: flex;
   background-color: #ffffff80;
   margin: 5px;
