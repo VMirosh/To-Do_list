@@ -27,7 +27,8 @@ body{
 }
 .container header .logo{
   display: flex;
-   box-sizing: border-box;
+ 
+  box-sizing: border-box;
   align-items: center;
   justify-content: flex-start;
 }
@@ -51,7 +52,7 @@ body{
   justify-content: space-around;
   
   text-align: center;
-  color: #006704;
+  color: #5b5652;
   box-sizing: border-box;
   
 }
@@ -78,10 +79,11 @@ body{
 } 
 .container main .create-task #add-task-btn{
   font-size: 24px;
-  color: #006704;
+  color: #5b5652;
 }
 .container main .show-tasks{
   height: 500px;
+  color: #006704;
   overflow-y: scroll;
   box-sizing: border-box;
   display: flex;
