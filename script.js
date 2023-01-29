@@ -7,20 +7,41 @@ let templateTask = document.querySelector(".template-task");
 let emptyList = document.querySelector(".empty-list");
 
 
+document.addEventListener('keydown', function (event) {
 
-createForm.addEventListener('click', addTask);
-function addTask(event) {
-  if (event.target.localName == "button") {
+  if (event.key == 'Enter') {
     if (!emptyList.hidden) emptyList.hidden = true;
-    
     let newTask = createTask(taskInput.value);
     showTask.prepend(newTask);
     taskInput.value = "";
     taskInput.focus();
-
+    
+  } else if (event.key == 'Backspace') {
+    let tasksAll = document.querySelectorAll(".task");
+    let deletefirst = document.querySelector(".task");
+    deletefirst.remove();
+    if (tasksAll.length === 1) {
+      emptyList.hidden = false;
+      return;
+    }
   }
-}
+});
 
+createForm.addEventListener('click', addTask);
+showTask.addEventListener('click', deleteTask);
+
+showTask.addEventListener('click', doneTask);
+
+function addTask(event) {
+  if (event.target.localName !== "button") return;
+  if (!emptyList.hidden) emptyList.hidden = true;
+  let newTask = createTask(taskInput.value);
+  showTask.prepend(newTask);
+  taskInput.value = "";
+  taskInput.focus();
+
+
+}
 function createTask(text) {
   let div = templateTask.content.cloneNode(true);
   let textValue = div.querySelector("#text-value");
@@ -28,8 +49,8 @@ function createTask(text) {
   return div;
 }
 
-showTask.addEventListener('click', deleteTask);
 function deleteTask(event) {
+  debugger
   if (event.target.dataset.action !== 'delete') return;
 
   let parenNode = event.target.closest('.task');
@@ -40,7 +61,6 @@ function deleteTask(event) {
   }
 }
 
-showTask.addEventListener('click', doneTask);
 
 function doneTask(event) {
   if (event.target.dataset.action !== 'done') return;
