@@ -6,6 +6,13 @@ let showTask = document.querySelector(".show-tasks");
 let templateTask = document.querySelector(".template-task");
 let emptyList = document.querySelector(".empty-list");
 
+let todayDate = document.querySelector(".today-date");
+
+let today = new Date();
+let formDate = options = { day: 'numeric', weekday: 'long'  };
+let now = today.toLocaleString('en-US',formDate);
+todayDate.append(now);
+
 
 document.addEventListener('keydown', function (event) {
 

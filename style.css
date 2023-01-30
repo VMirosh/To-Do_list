@@ -37,9 +37,10 @@ body{
 }
 .container header .today-date{
   box-sizing: border-box;
-  font-size: 24px;
-  max-width: 40%;
-  text-align: right;
+  font-size: 32px;
+  max-width: 25%;
+  text-align: center;
+  text-transform: uppercase;
  
 
 }
